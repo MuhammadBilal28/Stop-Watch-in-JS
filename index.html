@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stop Watch.css">
+    <title>Stop Watch</title>
+</head>
+<body>
+  <audio id="audio" src="tune.mp3"></audio>
+  <audio id="audio-fire" src="fire.mp3"></audio>
+<div class="main-container">
+  <div class="innercontainer">
+  <img src="img/stopwatch.png" alt="StopWatch" id="app_name">
+     <div class="timer_section">
+       <img src="img/Box.jpg" alt="" id="minutes_box" class="box">
+       <img src="img/Box.jpg" alt="" id="seconds_box" class="box">
+       <img src="img/Box.jpg" alt="" id="miliseconds_box" class="box">
+
+     </div>
+
+      <!-- Start Stop Pause Buttons -->
+      <div class="all_buttons">
+        <img src="img/play.png" alt="Start" id="start" class="btn">
+        <img src="img/stop.png" alt="Stop" id="stop" class="btn">
+      <p class="p p_min">00</p>
+      <p class="p p_sec">00</p>
+      <p class="p p_mili">00</p>
+    </div>
+  </div>
+  <div class="Laps_panel">
+    <div class="Laps">
+         <!-- <div class="Lap">
+           <span class="lap_time">00:00:00</span> <button id="delbtn">Delete</button>
+          </div>
+         <div class="Lap">
+           <span class="lap_time">00:00:00</span> <button id="delbtn">Delete</button>
+          </div> -->
+    </div>
+  </div>
+  <button id="Lap_generator_btn">Lap</button>
+
+
+</div>
+
+
+
+  <script src="Stop Watch .js"></script>
+</body>
+</html>

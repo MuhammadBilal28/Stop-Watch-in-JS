@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .Lap-window{
+            margin-left: 30em;
+            margin-top: 100px;
+            width: 17em;
+            height: 20em;
+            overflow-y:auto;
+            background-color: aquamarine;
+            border: 1px solid greenyellow;
+        }
+        .inner_section{
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .lap{
+            width: 14.8em;
+            border: 1px solid red;
+            height:5em;
+            margin-bottom: 2px;
+        }
+        .lap > span{
+            font-size: 30px;
+            padding-left: 6px;
+        }
+        .btn-lap{
+            width: 100px;
+            height: 40px;
+            margin-left: 60em;
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+    
+    <Section class="Lap-window">
+          <div class="inner_section " id="upper">
+             
+        </div>
+        
+    </Section>
+    <button class="btn-lap">Add Lap</button>
+    <button id="del">delete all laps
+    </button>
+
+    <h1 id="myH2">Hi This MyH2</h1>
+
+    <script >
+        const btnlap=document.querySelector('.btn-lap');
+        const inner_section=document.getElementById('upper')
+        const del=document.getElementById('del')
+        let counter=0;
+       
+        btnlap.addEventListener('click',function(){
+            counter++;
+            let html=`<div class="lap lap__${counter}" > <span class="name">Lap ${counter}</span> <br>
+                <button onclick="remove(this)">Delete Me</button>
+                </div>`
+            inner_section.insertAdjacentHTML('afterbegin',html)
+        })
+        
+      del.addEventListener('click',()=>{
+          inner_section.removeChild()
+      })
+
+      function remove(id){
+          let element=id;
+        //   element.remove()
+       const parent= element.parentElement;
+       parent.remove();
+      }
+
+// inner_section.parentElement
+    </script>
+</body>
+</html>

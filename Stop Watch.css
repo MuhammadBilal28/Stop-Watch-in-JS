@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+.main-container{
+    width: 70em;
+    height: 33em;
+    background: url('img/repeat.jpg');
+    background-size: cover;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+.innercontainer{
+    margin-left: -100px;
+}
+#app_name{
+    width: 13em;
+    height: 3em;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    padding-top: 20px;
+}
+.timer_section{
+    color: rgb(253, 120, 138);
+    margin-left: 235px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+}
+.box{
+    margin-left: -48px;
+}
+.all_buttons{
+    margin-left: 16em;
+}
+.btn{
+    width:100px;
+    height: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.p{
+    font-size: 80px;
+    color:aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p_min{
+   margin-top: -32.5%;
+   margin-left: 20px;
+}
+.p_sec{
+    margin-top: -19.3%;
+    margin-left: 24%;
+}
+.p_mili{
+    margin-left: 45.5%;
+    margin-top: -19%;
+}
+ .Laps_panel{
+ margin-left: 50em;
+ margin-top: -23em;
+  width: 17em;
+  height: 324px;
+  background: url('img/repeat.jpg');
+  border-radius: 10px;
+  /* overflow-x:hidden; */
+  overflow: auto;
+  border: 0.5px solid  rgb(255, 86, 86);
+ }
+ .Lap{
+     background-color:  rgb(255, 86, 86);
+     width: 17em;
+     height: 80px;
+     border-bottom: 0.5px solid black;
+     /* margin-bottom: -16px; */
+     position: relative;
+ }
+
+ .lap_time{
+     font-size: 27px;
+     margin-left: 20px;
+     position: absolute;
+    margin-top: 30px;
+ }
+ #delbtn{
+     width:90px;
+     height: 30px;
+     margin-left: 165px;
+     border-radius: 5px;
+     margin-top: 30px;
+     background: url('img/repeat.jpg');
+     color: white;
+     border: 2px solid gold;
+     outline: none;
+     cursor: pointer;
+ }
+ #delbtn:hover{
+    background: url('img/gold.png');
+    color: rgb(1, 19, 73);
+ }
+#Lap_generator_btn{
+   width: 180px;
+   height: 50px;
+   border-radius: 20px;
+   font-size: 24px;
+   background-color: transparent;
+   border: 2px solid rgb(255, 86, 86);
+   color: seashell;
+   cursor: pointer;
+   margin-left: 35em;
+   margin-top: 1em;
+}
+#Lap_generator_btn:hover{
+    background-color: rgb(255, 86, 86);
+
+}
